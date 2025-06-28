@@ -7,16 +7,16 @@ const multer = require('multer');
 const mysql = require("mysql2");
 
 const pool = mysql.createPool({
-  host: "13.48.249.182",
-  user: "remote_user",
-  password: "your_secure_password",
+  host: "biozagora.ddns.net",
+  user: "oth",
+  password: "AbBa@2002####",
   database: "biozagora",
   port: 3306
 });
-const port = 8080;
+const port = 5000;
 const cors = require('cors');
 app.use(cors({
-    origin: 'http://localhost:3000', // Allow requests from this origin
+    origin: 'https://facturationsystem.biozagora.com', // Allow requests from this origin
     methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allowed HTTP methods
     credentials: true // Allow cookies and credentials
   }));
